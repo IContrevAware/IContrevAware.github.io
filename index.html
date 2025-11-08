@@ -10,6 +10,19 @@
       --font: "Inter", system-ui, sans-serif;
       --transition: 0.3s ease;
     }
+
+    /* Default light values (so nothing disappears) */
+    body {
+      --bg: #fafafa;
+      --fg: #222;
+      --card: #fff;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font);
+      margin: 0;
+      transition: background var(--transition), color var(--transition);
+    }
+
     @media (prefers-color-scheme: dark) {
       body {
         --bg: #0f0f10;
@@ -17,6 +30,7 @@
         --card: #18181b;
       }
     }
+
     @media (prefers-color-scheme: light) {
       body {
         --bg: #fafafa;
@@ -24,18 +38,14 @@
         --card: #fff;
       }
     }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       scroll-behavior: smooth;
     }
-    body {
-      background: var(--bg);
-      color: var(--fg);
-      font-family: var(--font);
-      transition: background var(--transition), color var(--transition);
-    }
+
     header {
       position: fixed;
       top: 0;
@@ -46,21 +56,25 @@
       border-bottom: 1px solid rgba(0,0,0,0.1);
       z-index: 1000;
     }
+
     nav {
       display: flex;
       justify-content: center;
       gap: 2em;
       padding: 1em;
     }
+
     nav a {
       text-decoration: none;
       color: var(--fg);
       font-weight: 500;
       transition: color var(--transition);
     }
+
     nav a:hover {
       color: var(--accent);
     }
+
     section {
       min-height: 100vh;
       padding: 6em 2em 3em;
@@ -71,13 +85,16 @@
       text-align: center;
       gap: 1.2em;
     }
+
     h1, h2 {
       font-weight: 700;
     }
+
     p {
       max-width: 600px;
       line-height: 1.6;
     }
+
     .button {
       display: inline-block;
       margin-top: 1em;
@@ -88,10 +105,12 @@
       text-decoration: none;
       transition: transform var(--transition), opacity var(--transition);
     }
+
     .button:hover {
       opacity: 0.85;
       transform: translateY(-2px);
     }
+
     footer {
       text-align: center;
       padding: 2em 0;
@@ -117,7 +136,7 @@
   <section id="projects">
     <h2>Projects</h2>
     <p>Here’s a few things I’ve worked on or am working on. More coming soon.</p>
-    <a href="#" class="button">View My GitHub</a>
+    <a href="https://github.com/icontrevaware" class="button">View My GitHub</a>
   </section>
 
   <section id="contact">
