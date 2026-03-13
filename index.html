@@ -1,114 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iconlolv</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8faf8;
-      margin: 0;
-      padding: 0;
-      text-align: center; 
-      color: #333;
-    }
-
-    header {
-      background-color: #e0f2e0;
-      padding: 40px 20px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
-    .button-container {
-      margin: 20px;
-    }
-
-    button {
-      background-color: #b2e6b2; /* pastel green */
-      color: #222;
-      border: none;
-      padding: 12px 26px;
-      margin: 10px;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #9ed99e;
-    }
-
-    .dont-click-btn {
-      background-color: #ffb3b3; /* soft red */
-      color: #222;
-    }
-
-    .dont-click-btn:hover {
-      background-color: #ff9999;
-    }
-
-    #funnyImage {
-      display: none;
-      margin-top: 20px;
-      animation: fadeIn 0.6s ease;
-    }
-
-    #funnyImage img {
-      max-width: 350px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      background-color: #e0f2e0;
-      color: #555;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome Guides</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <h1>icontrev</h1>
-    <p>my site!!.</p>
-  </header>
+<div class="container">
 
-  <div class="button-container">
-    <button onclick="window.location.href='https://github.com/IContrevAware'">me github</button>
-    <button class="dont-click-btn" onclick="showImage()">Don't Click</button>
-  </div>
+<nav class="sidebar">
+<h2>Guides</h2>
+<ul>
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="install.html">MC Java</a></li>
+</ul>
+</nav>
 
-  <div id="funnyImage">
-    <img src="cat-underwater.png" alt="Wet cat looking betrayed">
-  </div>
+<main class="content">
+<h1>Welcome!</h1>
+<p>Pick a guide to get started.</p>
+</main>
 
-  <footer>
-    <p>© 2025 icontrev — Hosted on GitHub Pages</p>
-  </footer>
+</div>
 
-  <script>
-    function showImage() {
-      const imgDiv = document.getElementById("funnyImage");
-      imgDiv.style.display = imgDiv.style.display === "block" ? "none" : "block";
-    }
-  </script>
+<script src="js/sidebar.js"></script>
 </body>
 </html>
