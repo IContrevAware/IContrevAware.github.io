@@ -1,7 +1,10 @@
 const links = document.querySelectorAll('.sidebar a');
 
 links.forEach(link => {
-  if (link.href === window.location.href) {
+  const linkPath = new URL(link.href).pathname;
+  const currentPath = window.location.pathname;
+
+  if (linkPath === currentPath) {
     link.classList.add('active');
   }
 });
