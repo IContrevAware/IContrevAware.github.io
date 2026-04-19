@@ -1,7 +1,16 @@
-hello, this is the about page.  
-why are you here  
-this is a secret page  
-the only way you can find this page is by looking at the source code  
-you are such a nerd because you are looking at the source code.  
+# icon's about site.  
 
-uhh so this page is a place holder soooooo.  
+hey, so basically this is an *about site*.  
+you probably already **knew** that.    
+can you keep a secret?   
+
+
+im asking you, im not telling you a secret dummy.  
+
+oh wait this is an about site i forgot to actually talk about the site.  
+
+## **ABOUT**
+
+this page is a placeholder website.    
+held up ***coughs*** i mean hosted by  
+sticks and leaves ***coughs again*** i mean github pages.  
