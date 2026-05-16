@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>download links</title>
+    <title>Downloads</title>
 
     <style>
         body {
@@ -17,13 +17,21 @@
             margin: 0;
         }
 
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
         .box {
             background: #1e1e1e;
             padding: 20px 30px;
             border-radius: 12px;
             display: flex;
             align-items: center;
-            gap: 15px;
+            justify-content: space-between;
+            gap: 20px;
+            min-width: 320px;
             box-shadow: 0 0 15px rgba(0,0,0,0.4);
         }
 
@@ -44,12 +52,24 @@
 </head>
 <body>
 
-    <div class="box">
-        <span>Download fire beat 1</span>
+    <div class="container">
 
-        <a href="iconlolhaha.mp3" download="fire-beat-1.mp3">
-            <button>Download</button>
-        </a>
+        <div class="box">
+            <span>Download fire beat 1</span>
+
+            <a href="iconlolhaha.mp3" download="fire-beat-1.mp3">
+                <button>Download</button>
+            </a>
+        </div>
+
+        <div class="box">
+            <span>Download fire beat 2</span>
+
+            <a href="magnitude.mp3" download="fire-beat-2.mp3">
+                <button>Download</button>
+            </a>
+        </div>
+
     </div>
 
 </body>
